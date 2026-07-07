@@ -1,0 +1,65 @@
+2026-07-07 15:07:09,929 | WARNING | api.exchange_service | Falling back to cache for USD/INR: Exchange rate not available for USD to INR.
+2026-07-07 15:08:49,413 | WARNING | api.exchange_service | Primary symbol provider unavailable: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 15:10:08,757 | WARNING | api.exchange_service | Primary symbol provider unavailable: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 15:10:11,356 | WARNING | api.exchange_service | Primary rate provider unavailable for USD/INR: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 15:14:00,540 | WARNING | api.exchange_service | Primary symbol provider unavailable: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 15:15:02,470 | WARNING | api.exchange_service | Primary symbol provider unavailable: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 15:15:05,851 | WARNING | api.exchange_service | Primary rate provider unavailable for EUR/USD: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 15:21:17,508 | WARNING | api.exchange_service | Primary symbol provider unavailable: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 15:22:47,244 | WARNING | api.exchange_service | Primary rate provider unavailable for USD/INR: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 15:22:53,288 | WARNING | api.exchange_service | Primary rate provider unavailable for USD/INR: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 15:22:59,375 | WARNING | api.exchange_service | Primary rate provider unavailable for INR/USD: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 15:23:15,891 | WARNING | api.exchange_service | Primary rate provider unavailable for INR/USD: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 15:23:20,591 | WARNING | api.exchange_service | Primary rate provider unavailable for INR/USD: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 15:23:48,114 | WARNING | api.exchange_service | Primary rate provider unavailable for EUR/USD: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 15:24:20,482 | WARNING | api.exchange_service | Primary rate provider unavailable for EUR/USD: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 15:25:19,215 | WARNING | api.exchange_service | Primary rate provider unavailable for EUR/USD: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 15:26:19,313 | WARNING | api.exchange_service | Primary rate provider unavailable for EUR/USD: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 15:27:19,372 | WARNING | api.exchange_service | Primary rate provider unavailable for EUR/USD: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 15:28:19,883 | WARNING | api.exchange_service | Primary rate provider unavailable for EUR/USD: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 15:29:19,262 | WARNING | api.exchange_service | Primary rate provider unavailable for EUR/USD: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 15:30:19,423 | WARNING | api.exchange_service | Primary rate provider unavailable for EUR/USD: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 21:30:03,791 | WARNING | api.exchange_service | Primary symbol provider unavailable: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 21:30:11,020 | ERROR | gui.app | Failed to load currencies
+Traceback (most recent call last):
+  File "C:\Users\Shivansh Sagar\OneDrive\Desktop\Currency Converter\api\exchange_service.py", line 35, in fetch_symbols
+    return self._fetch_symbols_exchangerate_host()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Shivansh Sagar\OneDrive\Desktop\Currency Converter\api\exchange_service.py", line 93, in _fetch_symbols_exchangerate_host
+    self._raise_for_api_error(payload)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Shivansh Sagar\OneDrive\Desktop\Currency Converter\api\exchange_service.py", line 167, in _raise_for_api_error
+    raise ExchangeServiceError(message)
+api.exchange_service.ExchangeServiceError: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Shivansh Sagar\OneDrive\Desktop\Currency Converter\api\exchange_service.py", line 39, in fetch_symbols
+    return self._fetch_symbols_frankfurter()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Shivansh Sagar\OneDrive\Desktop\Currency Converter\api\exchange_service.py", line 105, in _fetch_symbols_frankfurter
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Shivansh Sagar\OneDrive\Desktop\Currency Converter\.venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 520 Server Error: <none> for url: https://api.frankfurter.dev/v1/currencies
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Shivansh Sagar\OneDrive\Desktop\Currency Converter\gui\app.py", line 218, in worker
+    currencies = self.converter_service.load_currencies()
+  File "C:\Users\Shivansh Sagar\OneDrive\Desktop\Currency Converter\services\converter_service.py", line 29, in load_currencies
+    self._currencies_cache = self.exchange_service.fetch_symbols()
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Shivansh Sagar\OneDrive\Desktop\Currency Converter\api\exchange_service.py", line 41, in fetch_symbols
+    raise ExchangeServiceError("Unable to load currency list from the exchange API.") from error
+api.exchange_service.ExchangeServiceError: Unable to load currency list from the exchange API.
+2026-07-07 21:46:03,670 | WARNING | api.exchange_service | Primary symbol provider unavailable: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 21:49:21,358 | WARNING | api.exchange_service | Primary rate provider unavailable for INR/USD: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 21:49:27,936 | WARNING | api.exchange_service | Primary rate provider unavailable for USD/INR: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 21:50:06,828 | WARNING | api.exchange_service | Primary rate provider unavailable for USD/INR: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 21:51:06,819 | WARNING | api.exchange_service | Primary rate provider unavailable for USD/INR: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 21:52:06,818 | WARNING | api.exchange_service | Primary rate provider unavailable for USD/INR: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]
+2026-07-07 21:53:06,850 | WARNING | api.exchange_service | Primary rate provider unavailable for USD/INR: You have not supplied an API Access Key. [Required format: access_key=YOUR_ACCESS_KEY]

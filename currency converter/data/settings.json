@@ -1,0 +1,14 @@
+{
+  "theme": "dark",
+  "auto_refresh_enabled": true,
+  "auto_refresh_seconds": 60,
+  "favorite_currencies": [
+    "USD",
+    "EUR",
+    "INR",
+    "GBP",
+    "JPY"
+  ],
+  "default_from_currency": "USD",
+  "default_to_currency": "INR"
+}

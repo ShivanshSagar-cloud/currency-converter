@@ -1,0 +1,2 @@
+timestamp,amount,from_currency,to_currency,exchange_rate,converted_amount,rate_source,is_live_rate,used_cached_rate
+2026-07-07T15:10:11.727621,100,USD,INR,95.4,9540.00,Frankfurter,True,False

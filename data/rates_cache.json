@@ -1,0 +1,29 @@
+{
+  "rates": {
+    "USD_INR": {
+      "base_currency": "USD",
+      "quote_currency": "INR",
+      "rate": "94.97",
+      "fetched_at": "2026-07-07T21:53:06.870733",
+      "source": "Frankfurter",
+      "is_live": true
+    },
+    "EUR_USD": {
+      "base_currency": "EUR",
+      "quote_currency": "USD",
+      "rate": "1.1415",
+      "fetched_at": "2026-07-07T15:30:24.688483",
+      "source": "Frankfurter",
+      "is_live": true
+    },
+    "INR_USD": {
+      "base_currency": "INR",
+      "quote_currency": "USD",
+      "rate": "0.01053",
+      "fetched_at": "2026-07-07T21:49:22.722645",
+      "source": "Frankfurter",
+      "is_live": true
+    }
+  },
+  "updated_at": "2026-07-07T21:53:06.872354"
+}

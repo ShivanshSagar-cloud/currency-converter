@@ -1,0 +1,180 @@
+{
+  "items": [
+    {
+      "amount": "100",
+      "from_currency": "EUR",
+      "to_currency": "USD",
+      "exchange_rate": "1.1415",
+      "converted_amount": "114.15",
+      "timestamp": "2026-07-07T15:30:24.690483",
+      "rate_source": "Frankfurter",
+      "is_live_rate": true,
+      "used_cached_rate": false
+    },
+    {
+      "amount": "100",
+      "from_currency": "EUR",
+      "to_currency": "USD",
+      "exchange_rate": "1.1415",
+      "converted_amount": "114.15",
+      "timestamp": "2026-07-07T15:29:19.629843",
+      "rate_source": "Frankfurter",
+      "is_live_rate": true,
+      "used_cached_rate": false
+    },
+    {
+      "amount": "100",
+      "from_currency": "EUR",
+      "to_currency": "USD",
+      "exchange_rate": "1.1415",
+      "converted_amount": "114.15",
+      "timestamp": "2026-07-07T15:28:20.277541",
+      "rate_source": "Frankfurter",
+      "is_live_rate": true,
+      "used_cached_rate": false
+    },
+    {
+      "amount": "100",
+      "from_currency": "EUR",
+      "to_currency": "USD",
+      "exchange_rate": "1.1415",
+      "converted_amount": "114.15",
+      "timestamp": "2026-07-07T15:27:19.784224",
+      "rate_source": "Frankfurter",
+      "is_live_rate": true,
+      "used_cached_rate": false
+    },
+    {
+      "amount": "100",
+      "from_currency": "EUR",
+      "to_currency": "USD",
+      "exchange_rate": "1.1415",
+      "converted_amount": "114.15",
+      "timestamp": "2026-07-07T15:26:19.682153",
+      "rate_source": "Frankfurter",
+      "is_live_rate": true,
+      "used_cached_rate": false
+    },
+    {
+      "amount": "100",
+      "from_currency": "EUR",
+      "to_currency": "USD",
+      "exchange_rate": "1.1415",
+      "converted_amount": "114.15",
+      "timestamp": "2026-07-07T15:25:19.592604",
+      "rate_source": "Frankfurter",
+      "is_live_rate": true,
+      "used_cached_rate": false
+    },
+    {
+      "amount": "100",
+      "from_currency": "EUR",
+      "to_currency": "USD",
+      "exchange_rate": "1.1415",
+      "converted_amount": "114.15",
+      "timestamp": "2026-07-07T15:24:20.859057",
+      "rate_source": "Frankfurter",
+      "is_live_rate": true,
+      "used_cached_rate": false
+    },
+    {
+      "amount": "100",
+      "from_currency": "EUR",
+      "to_currency": "USD",
+      "exchange_rate": "1.1415",
+      "converted_amount": "114.15",
+      "timestamp": "2026-07-07T15:23:48.477316",
+      "rate_source": "Frankfurter",
+      "is_live_rate": true,
+      "used_cached_rate": false
+    },
+    {
+      "amount": "100",
+      "from_currency": "INR",
+      "to_currency": "USD",
+      "exchange_rate": "0.01048",
+      "converted_amount": "1.05",
+      "timestamp": "2026-07-07T15:23:20.989054",
+      "rate_source": "Frankfurter",
+      "is_live_rate": true,
+      "used_cached_rate": false
+    },
+    {
+      "amount": "100",
+      "from_currency": "INR",
+      "to_currency": "USD",
+      "exchange_rate": "0.01048",
+      "converted_amount": "1.05",
+      "timestamp": "2026-07-07T15:23:16.183666",
+      "rate_source": "Frankfurter",
+      "is_live_rate": true,
+      "used_cached_rate": false
+    },
+    {
+      "amount": "100",
+      "from_currency": "INR",
+      "to_currency": "USD",
+      "exchange_rate": "0.01048",
+      "converted_amount": "1.05",
+      "timestamp": "2026-07-07T15:23:01.045962",
+      "rate_source": "Frankfurter",
+      "is_live_rate": true,
+      "used_cached_rate": false
+    },
+    {
+      "amount": "100",
+      "from_currency": "USD",
+      "to_currency": "INR",
+      "exchange_rate": "95.4",
+      "converted_amount": "9540.00",
+      "timestamp": "2026-07-07T15:22:53.686207",
+      "rate_source": "Frankfurter",
+      "is_live_rate": true,
+      "used_cached_rate": false
+    },
+    {
+      "amount": "100",
+      "from_currency": "USD",
+      "to_currency": "INR",
+      "exchange_rate": "95.4",
+      "converted_amount": "9540.00",
+      "timestamp": "2026-07-07T15:22:47.684618",
+      "rate_source": "Frankfurter",
+      "is_live_rate": true,
+      "used_cached_rate": false
+    },
+    {
+      "amount": "25.5",
+      "from_currency": "EUR",
+      "to_currency": "USD",
+      "exchange_rate": "1.1415",
+      "converted_amount": "29.11",
+      "timestamp": "2026-07-07T15:15:07.444006",
+      "rate_source": "Frankfurter",
+      "is_live_rate": true,
+      "used_cached_rate": false
+    },
+    {
+      "amount": "5",
+      "from_currency": "USD",
+      "to_currency": "INR",
+      "exchange_rate": "95.4",
+      "converted_amount": "477.00",
+      "timestamp": "2026-07-07T15:15:06.432761",
+      "rate_source": "Frankfurter (cached)",
+      "is_live_rate": false,
+      "used_cached_rate": true
+    },
+    {
+      "amount": "5",
+      "from_currency": "USD",
+      "to_currency": "INR",
+      "exchange_rate": "95.4",
+      "converted_amount": "477.00",
+      "timestamp": "2026-07-07T15:15:06.402759",
+      "rate_source": "Frankfurter",
+      "is_live_rate": true,
+      "used_cached_rate": false
+    }
+  ]
+}
