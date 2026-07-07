@@ -12,6 +12,7 @@ from services.converter_service import ConverterService
 from services.settings_service import SettingsService
 from utils.logger import setup_logging
 
+
 LOGGER = logging.getLogger(__name__)
 
 
